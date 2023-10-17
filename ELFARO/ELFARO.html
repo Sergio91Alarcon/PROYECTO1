@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Tu fuente de noticias</title>
+    <link rel="stylesheet" href="CSS/stylo.css">
+    <script>
+        function mostrarFechaHora() {
+            var fechaElemento = document.getElementById("fecha");
+            var horaElemento = document.getElementById("hora");
+
+            var fecha = new Date();
+            var opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+            var opcionesHora = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+            fechaElemento.textContent = fecha.toLocaleDateString('es-ES', opcionesFecha);
+            horaElemento.textContent = fecha.toLocaleTimeString('es-ES', opcionesHora);
+        }
+
+        // Llama a la función mostrarFechaHora para actualizar la fecha y hora cada segundo
+        setInterval(mostrarFechaHora, 1000);
+    </script>
+<body>
+    
+    <header>
+        <h1><h1>Diario</h1>
+        <center><img src="ELFARO.jpg" width="500" height="170"> </center></h1>
+        <div id="fecha"></div>
+        <div id="hora"></div>
+    </header>
+    <div class="articulos">
+        <!-- Lista de artículos se cargará aquí dinámicamente -->
+    </div>
+
+    <form id="formulario-articulo">
+        <input type="text" id="titulo" placeholder="Título del artículo" required>
+        <textarea id="contenido" placeholder="Contenido del artículo" required></textarea>
+        <button type="submit">Agregar Artículo</button>
+    </form>
+    
+
+    <script src="script.js"></script>
+    
+
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#deporte">Deporte</a></li>
+            <li><a href="#negocios">Negocios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Artículos de Noticias -->
+    <div class="bloque-articulo"> 
+    <section id="inicio">
+        
+        <h2>Noticias</h2>
+        <table>
+            <tr>
+                <td>
+                    <h3>Noticia 1</h3>
+                    <h1>Lo que hacemos es sagrado": voluntarios trabajan para dar dignidad a muertos en Israel</h1>
+                    <p>Detrás de unas puertas altas con alambre de púas de una base militar en el centro de Israel, y lejos de la mirada pública, soldados, policías y expertos forenses trabajaron diligentemente la semana pasada en una tarea que es casi imposible de imaginar desde afuera: la identificación masiva de las víctimas del mortal ataque de Hamas.
+
+                        Junto a ellos, hasta altas horas de la noche y bajo la intensa luz de los reflectores, estaba otro grupo identificable por sus chalecos amarillos brillantes.
+                        
+                        Se trata de Zaka, una organización religiosa que desde el ataque ha sido responsable de una de las tareas más difíciles que se están llevando a cabo en Israel.
+                        
+                        Su trabajo consiste en recoger todas las partes de los restos de los fallecidos, incluyendo su sangre, para que puedan ser enterrados de acuerdo con la ley religiosa judía.
+                        
+                        La organización es llamada cuando ocurren eventos traumáticos, incluyendo desastres naturales, suicidios desde edificios y actos de terrorismo.
+                        
+                        La mayoría de sus miembros son judíos ultraortodoxos y todos son voluntarios.
+                        
+                        Llamado a la acción
+                        Cuando Hamas comenzó su violenta incursión por el sur de Israel el sábado 7 de octubre, Baroch Frankel, un voluntario de 28 años de Zaka estaba observando el Sabbath como de costumbre en su apartamento en Bnei Brak, una ciudad ortodoxa cerca de Tel Aviv donde viven muchos de los voluntarios.
+                        
+                        Hacia media mañana, escuchó en su radio walkie-talkie de Zaka que había una especie de emergencia.
+                        
+                        El walkie-talkie estaba permitido, puesto que el Sabbath puede romperse en asuntos de vida o muerte, pero no fue hasta el anochecer que Frankel pudo mirar su teléfono y entender completamente la magnitud del ataque.
+                        
+                        Luego, él tomó su equipo, que contenía bolsas para cadáveres, guantes quirúrgicos, cubrezapatos y trapos para absorber la sangre, y se subió a su automóvil.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Noticia 2</h3>
+                    <h1>Juicios contra los principales cabecillas del Tren de Aragua en Chile partirían a inicios de 2024</h1>
+                    <p>Durante el primer cuatrimestre de 2024 se deberían realizar los primeros dos juicios en contra del Tren de Aragua (TDA) en Chile, después que las diversas manifestaciones de dicha organización criminal comenzaran a ser investigadas a fines de 2021 en Iquique y, posteriormente, en Arica.
+
+                        La investigación que lleva adelante la Unidad de Análisis Criminal de la Fiscalía de Iquique, y que fue bautizada como “Tren de Aragua 1” (TDA1), acaba de ser cerrada por dicha entidad investigativa y se estima que presentarán la respectiva acusación en cualquier momento. Si la defensa de los imputados no se opone o pide nuevas diligencias, debería realizarse en el Juzgado de Garantía de Alto Hospicio la audiencia de preparación de juicio oral, instancia en la que se decide qué testigos, peritos y evidencias llegarán al juicio respectivo, luego de lo cual este debe tener lugar, en un máximo de dos meses, ante el Tribunal de Juicio Oral de Iquique.
+                        
+                        En esta causa debería haber a lo menos seis acusados, todos integrantes de la célula que encabezaba Carlos González Vaca, más conocido como “Estrella”, sujeto que residía en Quilpué y quien estaba en contacto directo de Catire Santa Rita, líder máximo del TDA en Perú, el que a su vez se comunicaba en forma constante con Héctor “Niño” Guerrero, cuando este se encontraba al interior del penal de Tocorón, en Venezuela, desde donde dirigía en forma personal las operaciones de la organización criminal por todo el continente, interviniendo incluso en las disputas personales de sus miembros, como lo reveló a El Mostrador el Fiscal Regional Raúl Arancibia.
+                        
+                        Entre los delitos inicialmente formalizados en contra del grupo se encuentran secuestros, homicidios, tráfico de personas con fines de explotación sexual –entre otras cosas, controlaban el paso entre Pisiga y Colchane–, tráfico de drogas y lavado de activos. En Iquique, además, existen otras dos grandes investigaciones ya formalizadas en contra del grupo, bautizadas como “TDA2” y “TDA3”, que aún poseen plazo judicial de investigación y que, por ende, serán objeto de otros juicios.
+                        
+                        El caso de Los Gallegos
+                        En Arica, en tanto, la semana pasada estaba fijada la audiencia de preparación de juicio oral en contra de Los Gallegos, una de las tantas facciones del TDA, que actuaba en esa ciudad y que se caracteriza por la crueldad con que opera, pues no solo eran los responsables de la casa de torturas que se descubrió en el cerro Chuño, sino que también enterraban a sus víctimas vivas, como ha quedado en evidencia en al menos tres casos en los cuales, por lo demás, las víctimas resultaron ser exmiembros de la banda.
+                        
+                        También dirigidos desde Perú, por Félix Castillo Rondón, alias “Pure Aner”, en el caso de Los Gallegos la Fiscalía acusó a 44 personas como integrantes de la agrupación criminal, pidiendo para varios de ellos condenas a cadena perpetua por prácticamente los mismos delitos antes reseñados, además de una serie de amenazas en contra de funcionarios policiales y de Gendarmería.
+                        
+                        La audiencia de la semana pasada estaba, sin embargo, teñida por una anterior, en la cual el juez Héctor Barraza dio acceso a los abogados defensores de Los Gallegos a las identidades de los testigos protegidos y los agentes encubiertos que la PDI había infiltrado en el grupo, lo que motivó una serie de acciones, entre ellas, un recurso de protección que fue fallado en contra del juez por parte de la Corte local, que calificó su actuar como arbitrario.
+                        
+                        Sin embargo, mucho más compleja resulta para el magistrado –que también está sometido a una investigación interna– la indagatoria penal que abrió el Fiscal Nacional, Ángel Valencia, en la que se investiga Barraza, a varios funcionarios del tribunal y a cuatro defensores, los cuales poseen calidad de imputados.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Noticia 3</h3>
+                    <h1>Proyecto de inversión chino inyectará más de 200 millones de dólares para impulsar Estrategia Nacional del Litio</h1>
+                    <p>¡Buenas noticias para Chile! El Presidente Gabriel Boric anunció proyecto de inversión por más de 200 millones de dólares para impulsar la Estrategia Nacional del Litio.
+
+                        Durante su visita de Estado a la República Popular China, el mandatario dio a conocer que el proyecto se desarrollará a partir de 2025 en la Región de Antofagasta, el cual podría considerar aún más recursos a raíz de la instalación de infraestructura.
+                        
+                        La inversión corresponde a la propuesta de la empresa China Yongqing Technology Co. Ltd, perteneciente al holding Tsingshan, la segunda seleccionada en la Convocatoria Corfo a Productores Especializados de Litio para Impulsar Iniciativas de Valor Agregado en Chile.
+                        
+                        La propuesta tiene un monto de inversión estimado de USD 233 millones, y un total estimado de 668 trabajos una vez que alcance su capacidad máxima de producción (120.000 ton.), comprometiendo que el 90% de las personas trabajadoras serán chilenas.
+                        
+                        A partir del segundo año de funcionamiento de la planta, la empresa ha comprometido enviar anualmente a 10 profesionales a un programa de formación académica en China con una duración de duración de 4 a 6 meses.
+                        
+                        Esta propuesta fue recibida en el marco de la convocatoria Corfo que busca que empresas chilenas y/o extranjeras puedan acceder al Precio Preferente de Productos de Litio por parte de la empresa Chile SQM Salar S.A hasta el año 2030, en base a la propuesta y selección de proyectos de inversión para la elaboración en Chile de productos de valor agregado, que utilicen como insumo los productos de litio que SQM produce en Chile.</p>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Video Destacado</h2>
+        <video controls>
+            <source src="VDO/video1.mp4" type="video/mp4">
+            
+        </video>
+
+        <h2>Audio Destacado</h2>
+        <audio controls>
+            <source src="AUDIO/musica1.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+</div>
+
+    <!-- Sección de Deporte -->
+    <section id="deporte">
+        <h2>Noticias de Deporte</h2>
+        <table>
+            <tr>
+                <td>
+                    <h3>Deporte 1</h3>
+                    <h1>“Pelos de punta”: Godín quedó maravillado con el Monumental y cuenta su lazo con Fernández</h1>
+                    <p>Una de las estrellas que estuvo presente en la despedida de Matías Fernández fue el uruguayo Diego Godín. El ex defensor charrúa compartió con el chileno cuando ambos eran muy jóvenes en el Villarreal y se enfrentaron innumerables veces por la selección. Es por eso que no quiso perderse el último adiós del formado en Colo Colo. Tras la fiesta, “El Faraón” habló con AS Chile.
+
+                        “El ambiente fue extraordinario, era emocionante estar ahí en la cancha”, declaró. Godín disfrutó el partido de principio a fin, casi sin tomar en cuenta que se trataba de un partido de homenaje. Fue lejos el más sólido de la defensa en el equipo ‘Amigos de Matías’, donde pudo mostrar por qué estuvo tantos años en Europa, donde logró múltiples títulos con el Atlético de Madrid y disputó dos finales de Champions League.
+                        
+                        El campeón de América con Uruguay el 2011 también se refirió a Alan Saldivia, defensor central de Colo Colo, quien forma parte de la selección uruguaya Sub 23 que vendrá a Chile a disputar los Juegos Panamericanos Santiago 2023: “Lo conozco de nombre”.
+                        
+                        - ¿Qué recuerdos tiene de Matías Fernández?
+                        
+                        - Los mejores. Matías siempre fue un crack, un diferente dentro del fútbol, tenía un talento único que todavía lo tiene, ahora ya como ex futbolista, al igual que yo (rié). Fue un fenómeno también como persona.
+                        
+                        - ¿Cómo recuerda la etapa de ambos en el Villarreal?
+                        
+                        -Yo la verdad es que lo conocí antes de que llegara a España. Nosotros empezamos a jugar en contra en el 2005 en el Sudamericano Sub 20 en Colombia, ahí empezamos a enfrentarnos. Ya después el fútbol nos puso de compañeros en el Villarreal y me permitió conocer al verdadero Matías.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> Deporte 2</h3>
+                    <h1>Colo Colo no pudo ante la hegemonía brasileña</h1>
+                    <p>Por los cuartos de final de la Copa Libertadores femenina, Inter de Porto Alegre venció por 4-2 a Colo Colo en Cali. Las albas se suman a la eliminación de la U y dejan a Chile sin representantes en el certamen continental.
+
+                        La victoria de las brasileñas fue liderada por Priscila. La joven delantera de 19 años anotó un triplete (17′, 19′ y 74′) y se consagró como la gran figura en el Estadio Pascual Guerrero.
+                        
+                        
+                        Pese al amplio marcador final, las albas compitieron de gran forma en el primer tiempo. El duelo era parejo, y, pese a los dos goles en contra en el amanecer del cotejo, las chilenas concretaron uno de los mejores goles de la competición. Al minuto 29′, un gran disparo de media distancia por parte de Dahiana Bogarín estableció el 2-1 parcial. Un verdadero golazo.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Deporte 3</h3>
+                    <h1>Martínez impuso la localía y se quedó con el Rally Mobil Quillón 2021</h1>
+                    <p>Todo es alegría en la carpa del equipo CB Tech Rally by Skoda. Su piloto principal, Jorge Martínez, junto a su copiloto Alberto Álvarez lograron imponer la localía para quedarse con el Rally Mobil Quillón 2021, aprovechando el retiro del piloto peruano Nicolás Fuchs.
+
+                        El oriundo de Concepción tuvo un fin de semana especial y lo hacía notar. Desde el primer dia estaba de buen humor, compartía con sus colegas e incluso se atrevía a imitar al cantante nacional Marcianeke.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    </div>
+
+    <!-- Sección de Negocios -->
+    <div class="bloque-articulo">
+    <section id="negocios">
+        <h2>Negocios y Emprendimientos</h2>
+        <table>
+            <tr>
+                <td>
+                    <h3>Negocios 1</h3>
+                    <h1>Llaman a nuevas y nuevos emprendedores a prepararse para los próximos tres años</h1>
+                    <p>El mercado laboral se mantiene rezagado y se estima que su recuperación a niveles de prepandemia se podría alcanzar en 2026. Ante un escenario complejo en términos de empleo y donde el emprendimiento surge como una opción, especialistas proponen priorizar aquellos productos o servicios que generen mayores retornos y mantener el orden financiero.
+
+
+                        El mercado laboral se mantiene rezagado y se estima que su recuperación a niveles de prepandemia se podría alcanzar en 2026, según un estudio del Instituto de Economía de la Universidad Católica. Un escenario complejo, sobre todo si la tasa de desempleo nacional se empina por el 8,8%, lo que se suma a que, siguiendo el análisis mencionado, miles de personas seguirán buscando un trabajo para subsistir al menos durante los próximos tres años. 
+                        
+                        De hecho, un gran porcentaje de los emprendimientos nacen por necesidad y en este tipo de contexto económico aumenta el interés por desarrollar un negocio propio. Especialistas recomiendan que junto con tener la idea, se tengan consideraciones como dimensionar el mercado potencial, focalizar los recursos, priorizar aquellos productos o servicios que generan mayor retorno, mantener el orden financiero y conocer los marcos legales que afectan a quienes mantienen sus propios negocios.
+                        
+                        La directora ejecutiva de ChileConverge, María Soledad Correa, explica que muchas veces las principales dificultades que se presentan tienen su origen en la falta de definición de un modelo de negocio, en el desconocimiento del mercado y los beneficios que existen para las empresas formalizadas. 
+                        
+                        “Lo recomendable es capacitarse y buscar el apoyo de quienes tienen experiencia para despejar las dudas que suelen generarse en este procesos. Siempre habrá condiciones propicias para quienes identifiquen mejor las oportunidades y nuevas tendencias, esa es la esencia de una empresa, pero no es lo único de lo que una empresa, de cualquier tamaño, debe preocuparse”, comenta Correa.
+                        
+                        Si bien el escenario laboral puede parecer desafiante a primera vista, es precisamente en estos tiempos donde surgen las mayores oportunidades para emprendedores audaces y visionarios dispuestos a adaptarse y aprender, agrega Correa. “La combinación de una correcta preparación, el apoyo de redes especializadas y una mentalidad abierta al cambio, puede ser la fórmula ganadora en los próximos años”, enfatiza. 
+                        
+                        En este sentido, la profesional recuerda que en los dos años de existencia de esta red de apoyo a emprendedores, en que participan 80 mil MiPymes, ya se han realizado más de 10 mil cursos y seis mil mentorías, que justamente buscan apoyar de manera más integral a personas que han decidido iniciar su propio negocio. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Negocios 2</h3>
+                    <h1>¿Pensando en emprender en regiones? Cuáles son las zonas y sectores productivos con mayor potencial</h1>
+                    <p>Antiguamente se pensaba que Santiago era el centro neurálgico para un negocio exitoso. Hoy, en cambio, son cada vez más las personas que se atreven a impulsar sus ideas fuera de la capital, gracias al atractivo de sectores como el turismo y la agricultura.
+
+
+                        Cuando se habla de empresas con triple impacto se refiere al tipo de ellas que son rentables a partir de integrar en su modelo de negocio tres beneficios: social, ambiental y económico. En el mundo corporativo cada día son más las compañías que buscan desarrollar sus procesos y operaciones integrando aspectos que se alineen a estos modelos de desarrollo. 
+                        
+                        ¿Pero que pasa desde el emprendimiento? ¿Es posible desarrollar negocios rentables financieramente y que además puedan tener impactos positivos para el medio ambiente y la sociedad? ¿Es Chile un terreno fértil para ello? 
+                        
+                        Efectivamente, un análisis de Gedes, agencia especializada en desarrollo y planificación territorial e intermediaria de Corfo y Sercotec, evidencia que las regiones de Chile poseen importantes ventajas competitivas asociadas a su capital natural para impulsar negocios de triple impacto.
+                        
+                        Entre las aristas principales de estos proyectos está el cultivo de alimentos en el extremo norte y la pesca responsable en la zona sur, pasando por el turismo de intereses especiales en el norte grande y la agricultura regenerativa para la conservación de los suelos en la zona central.
+                        
+                        En su análisis, por ejemplo, lo que ocurre en la Región de Arica y Parinacota es un caso interesante, considerando además el rol de Chile como potencia agroalimentaria. 
+                        
+                        “La experiencia en el cultivo de tomate es una referencia atractiva para la producción de alimentos. Arica es una zona con un buen clima, sin heladas y con agua proveniente del altiplano que pueden abastecer los predios. Además, se incentiva el uso de tecnología para obtener mayor eficiencia, lo que podría ser también un impulso a la innovación, similar a lo que ha ocurrido en países como Israel con un sistema muy eficiente en producción de agua, con un impacto ambiental y de erosión de los suelos mucho menor”, señala el gerente de la firma, Roberto Cervela.
+                        
+                        En el centro-norte, el ejecutivo destaca la promoción de un turismo con menor huella de carbono: hoteles rústicos y con una matriz energética solar, de menor escala, rescate de actividades ancestrales y gastronomía típica y la observación en cielos con menor contaminación lumínica.
+                        
+                        “Es una oferta atractiva para el turista extranjero, que cumple esta experiencia, en línea con lo que también ha ocurrido en San Pedro de Atacama, con una industria que se ha desarrollado con fuerza y con una participación protagónica de las comunidades”, explica.  
+                        
+                        En la zona central, el impulso a proyectos de agricultura sostenible es uno de los ejes más interesantes, de acuerdo al especialista de la agencia de desarrollo territorial.
+                        
+                        Finalmente, en el sur, existe una activa comunidad de empresas certificadas de triple impacto (pertenecientes al Movimiento B), también se observan oportunidades a nivel de la producción de alimentos, específicamente a nivel de la pesca responsable, de acuerdo al ejecutivo.
+                        
+                        “Las distintas zonas del país disponen de un capital natural muy interesante para impulsar emprendimientos sostenibles, con el propósito de desarrollar una industria más bondadosa y una economía más humana. Una cosa curiosa es que en el contexto de crisis económica también surge la creatividad y la innovación. Tenemos un terreno avanzando, y hoy estos proyectos buscan agregar cada vez más valor”, dice Cervela.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Negocios 3</h3>
+                    <h1>Capital Abeja para emprendedoras mujeres: Conoce los requisitos y pasos de postulación</h1>
+                    <p>Capital Abeja es un fondo concursable de Sercotec que promueve la creación de nuevos negocios liderados por mujeres. Las inscripciones para recibir el Capital Abeja cierran este miércoles 28 de junio y puedes postular a través del sitio web www.sercotec.cl
+
+
+                        Capital Abeja Emprende es un programa ejecutado por el Servicio de Cooperación Técnica (Sercotec) con fondos del Servicio nacional de la Mujer y la Equidad de Género.
+                        
+                        ¿Qué apoyo entrega Capital Abeja?
+                        Este fondo entrega un subsidio de $3,5 millones para concretar las actividades detalladas en el plan de trabajo.
+                        
+                        De estos:
+                        
+                        Un mínimo de $200 mil y un máximo de $500 mil pueden destinarse a acciones de gestión empresarial, tales como asistencia técnica, capacitación y marketing.
+                        Desde $3 millones hasta $3,3 millones pueden destinarse a inversiones, tales como activos, habilitación de infraestructura y capital de trabajo.
+                        Cada emprendedora seleccionada deberá entregar un aporte en efectivo, el cual corresponderá a un porcentaje del subsidio Sercotec y estará definido en las bases de postulación.
+                        Además, deberá financiar cualquier impuesto asociado a su proyecto.
+                        
+                        ¿Cuáles son los requisitos de Capital Abeja?
+                        Mayores de edad (igual o mayor a 18 años).
+                        De sexo registral femenino.
+                        Sin inicio de actividades en primera categoría ante el Servicio de Impuestos Internos.
+                        Que presenten un proyecto de negocio que cumpla con el foco definido por la convocatoria de Sercotec en su región, señalado en las bases de postulación.
+                        ¿Cómo postular al Capital Abeja que entrega 3.5 millones?
+                        Registrarte como usuaria de Sercotec. Ingresa AQUÍ. (https://www.sercotec.cl/capital-abeja-emprende/)
+                        Descargar y leer detenidamente las bases y anexos de la convocatoria.
+                        Completar y enviar el formulario de postulación, video de presentación y los documentos requeridos, verificando que cumplan con el formato y contenido solicitados, en el plazo establecido.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+</div>
+<form id="formulario-contacto" class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+    
+    <button type="submit">Enviar</button>
+</form>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Síguenos en las redes sociales: <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+        <p>Contacto: sergio.lagos@saludpm.cl | Teléfono: +569-34671751</p>
+        <p>&copy; 2023 El Faro - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
